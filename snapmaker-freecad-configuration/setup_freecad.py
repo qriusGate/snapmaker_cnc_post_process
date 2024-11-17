@@ -17,6 +17,7 @@ deb_path = base_path + "/.local/share/FreeCAD/Macro/"
 a350 = "snapmaker_a350_post.py"
 a250 = "snapmaker_a250_post.py"
 artisan = "snapmaker_artisan_post.py"
+name = "snapmaker_post.py"
 post_processor = "./"
 macro_path = ""
 
@@ -39,9 +40,15 @@ if macro_path != 0:
     choice = input("What unit do you want to have the post-processor for (select one) : A250/A350/Artisan/other \n")
     if choice.lower() == "a250":
         post_processor = a250
+        name = a250
     elif choice.lower() == "a350":
         post_processor = a350
-    else:
+        name = a350
+    elif choice.lower() == "artisan":
         post_processor = artisan
+        name = artisan
+    else:
+        post_process = artisan
 
-shutil.copy2("./"+post_processor, macro_path+post_processor)
+
+shutil.copy2("./"+post_processor, macro_path+name)
