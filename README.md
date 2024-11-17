@@ -35,7 +35,10 @@ Generate gcode using Fusion 360
    * The reason we favor Fusion 360 is that it has free license for education.
 
 **FreeCAD**
-Fusion360 blocks access to CNC functions for hobbyist license users, and so FreeCAD may be a more desirable option. This Fork was made to support use of FreeCAD.
+
+Fusion360 blocks access to CNC functions for hobbyist license users, and so FreeCAD may be a more desirable option. 
+
+This Fork was made to support use of FreeCAD.
 The ReadMe in the FreeCAD folder has more instructions
 
 
