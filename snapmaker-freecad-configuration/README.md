@@ -4,7 +4,8 @@ This instruction teaches you how to carve hexagons on a 2mm carbon fiber sheet. 
 
 ## Getting Started
 
-This software is available for Windows and Mac. Since the configuration for both systems is similar, here in this instruction, we take steps in Windows as an example.
+This software is available for Windows, Linux, and Mac. Since the configuration for both systems is similar, here in this instruction, we take steps in Windows as an example. 
+Linux systems do require some variation as the path used for custom post_processors is different
 
 ### Step 1. Get the Software Ready
 
@@ -12,8 +13,12 @@ Install the software and save the configuration files according to the following
 
 1. Download and Install FreeCAD at https://www.freecadweb.org/.
 2. Select the ![alt path](./image/path.png)**Path workbenches** and click ![alt tool](./image/tool.png)**tool manager** to import the [Snapmaker-2.0-CNC-Tools.json](./Snapmaker-2.0-CNC-Tools.json).
-3. Copy [snapmaker_freecad_post.py](./snapmaker_freecad_post.py) to the C:\Program Files\\${FreeCAD Path}\Mod\Path\PathScripts\post to add the post processor of the Snapmaker to FreeCAD.
+3. Copy [snapmaker_freecad_post.py](./snapmaker_freecad_post.py) to the PostScripts or Macros folder to add the postprocessor to FreeCAD
+    - Windows :: C:\Program Files\\${FreeCAD Path}\Mod\Path\PathScripts\post 
+    - Ubuntu : Snap release :: ~/snap/freecad/common
+    - Debian/AppImage release :: ~/.local/share/FreeCAD/Macro
     - More FreeCAD path post details on the https://wiki.freecadweb.org/Path_Post
+    - To make more modifications to customize the post_processor, https://wiki.freecad.org/CAM_Postprocessor_Customization#Naming_convention
 
 ### Step 2. Design the Model You Want to Carve
 
