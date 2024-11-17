@@ -29,7 +29,7 @@ Install the software and save the configuration files according to the following
 4. Option B: if using Linux, you can save the name as something very unique. 
 Then, in a separate terminal, 
 1. Go to the root folder "cd /"
-2. then use the command "find -name 'name' | grep 'name'". 
+2. Then use the command "find -name 'name' | grep 'name'". 
 
 This will search your whole system for the file. The list will be hard to read, but this should highlight lines that contain the 'name' you put in, making it easier to read. You can then copy and paste the post_processor you want directly into that folder.
 
