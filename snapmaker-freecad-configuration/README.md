@@ -19,6 +19,8 @@ Install the software and save the configuration files according to the following
     - Debian/AppImage release :: ~/.local/share/FreeCAD/Macro
     - More FreeCAD path post details on the https://wiki.freecadweb.org/Path_Post
     - To make more modifications to customize the post_processor, https://wiki.freecad.org/CAM_Postprocessor_Customization#Naming_convention
+4. Alternately, if using Linux you can use the command "python [setup_freecad.py](./setup_freecad.py)", which will try to detect where the correct folder is and copy the desired post_processor to that location
+
 
 ### If you can't find your macros folder:
 1. Go into FreeCAD and open the Macro tab at the top. Click "Macros ..." to open the Macros window ![alt MacroWindow](./image/MacrosWindow.png)

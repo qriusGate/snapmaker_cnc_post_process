@@ -1,5 +1,7 @@
 """This file is meant to automatically detect what variant of FreeCAD you are running (snap, appimage, etc), and place the post_processors in the correct folder.
-This program assumes you have run FreeCAD at least once before, to ensure that the files and folders have been set up already"""
+This program assumes you have run FreeCAD at least once before, to ensure that the files and folders have been set up already. You can run this file with the command 
+'python setup_freecad.py'
+"""
 
 import os #for the path
 import sys #for the args, which are not implemented yet
