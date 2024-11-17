@@ -48,7 +48,8 @@ if macro_path != 0:
         post_processor = artisan
         name = artisan
     else:
-        post_process = artisan
+        post_processor = artisan
+        print("Copying the file now. Please check the file in the directory \n\n\t" + macro_path + "\n\nand manually change the following to match your unit:: \n - the names (from Snapmaker_Artisan) \n - dimensions (CORNER_MAX)")
 
 
 shutil.copy2("./"+post_processor, macro_path+name)
