@@ -26,8 +26,7 @@ Install the software and save the configuration files according to the following
 1. Go into FreeCAD and open the Macro tab at the top. Click "Macros ..." to open the Macros window ![alt MacroWindow](./image/MacrosWindow.png)
 2. Click Create. This will open a text window to input the code
 3. Option A: You can copy and paste the code from [snapmaker_(model)_post.py](./snapmaker_a350_post.py) into the window and save it under the name [snapmaker_(model)_post.py](./snapmaker_a350_post.py)
-OR
-Option B: if using Linux, you can save the name as something very unique. 
+4. Option B: if using Linux, you can save the name as something very unique. 
 Then, use the command "find -name 'name' | grep 'name'". This will search your whole system for the file. The list will be hard to read, but this should highlight lines that contain the 'name' you put in, making it easier to read. You can then copy and paste the post_processor you want directly into that folder.
 
 ### Step 2. Design the Model You Want to Carve
