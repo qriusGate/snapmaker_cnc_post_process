@@ -2,9 +2,9 @@
 
 ## Background
 
-1. Basic workflow explaination. 
+1. Basic workflow explanation. 
    * https://support.snapmaker.com/hc/en-us/articles/360041252474-CNC-Carving
-2. Basic workflow explaination in video.
+2. Basic workflow explanation in video.
    * https://www.youtube.com/watch?v=OgUdDoCx5iw&feature=youtu.be
 
 
@@ -34,7 +34,9 @@ Generate gcode using Fusion 360
    * We have developed post processor script for Fusion 360 to help more advanced use case. 
    * The reason we favor Fusion 360 is that it has free license for education.
 
-
+**FreeCAD**
+Fusion360 blocks access to CNC functions for hobbyist license users, and so FreeCAD may be a more desirable option. This Fork was made to support use of FreeCAD.
+The ReadMe in the FreeCAD folder has more instructions
 
 
 ##  Support software status overview 

@@ -12,13 +12,21 @@ Linux systems do require some variation as the path used for custom post_process
 Install the software and save the configuration files according to the following steps:
 
 1. Download and Install FreeCAD at https://www.freecadweb.org/.
-2. Select the ![alt path](./image/path.png)**Path workbenches** and click ![alt tool](./image/tool.png)**tool manager** to import the [Snapmaker-2.0-CNC-Tools.json](./Snapmaker-2.0-CNC-Tools.json).
-3. Copy [snapmaker_freecad_post.py](./snapmaker_freecad_post.py) to the PostScripts or Macros folder to add the postprocessor to FreeCAD
+2. Select the ![alt path](./image/path.png)**Path workbenches** and click ![alt tool](./image/tool.png)**tool manager** to import the [Snapmaker-2.0-CNC-Tools.json](./Snapmaker-2.0-CNC-Tools.json). NOTE: It is recommended to add more custom tool options for a more complete selection of tools
+3. Copy [snapmaker_(model)_post.py](./snapmaker_a350_post.py) to the PostScripts or Macros folder to add the postprocessor to FreeCAD
     - Windows :: C:\Program Files\\${FreeCAD Path}\Mod\Path\PathScripts\post 
     - Ubuntu : Snap release :: ~/snap/freecad/common
     - Debian/AppImage release :: ~/.local/share/FreeCAD/Macro
     - More FreeCAD path post details on the https://wiki.freecadweb.org/Path_Post
     - To make more modifications to customize the post_processor, https://wiki.freecad.org/CAM_Postprocessor_Customization#Naming_convention
+
+### If you can't find your macros folder:
+1. Go into FreeCAD and open the Macro tab at the top. Click "Macros ..." to open the Macros window ![alt MacroWindow](./image/MacrosWindow.png)
+2. Click Create. This will open a text window to input the code
+3. Option A: You can copy and paste the code from [snapmaker_(model)_post.py](./snapmaker_a350_post.py) into the window and save it under the name [snapmaker_(model)_post.py](./snapmaker_a350_post.py)
+OR
+Option B: if using Linux, you can save the name as something very unique. 
+Then, use the command "find -name 'name' | grep 'name'". This will search your whole system for the file. The list will be hard to read, but this should highlight lines that contain the 'name' you put in, making it easier to read. You can then copy and paste the post_processor you want directly into that folder.
 
 ### Step 2. Design the Model You Want to Carve
 
